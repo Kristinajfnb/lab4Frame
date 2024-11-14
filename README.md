@@ -40,7 +40,7 @@ public function store(Request $request)
     return redirect()->route('tasks.index')->with('success', 'Задача успешно добавлена.');
 }
 ```
-![Ку](images/1.png)
+![Ку](/1.png)
 
 4. Реализуем валидацию данных непосредственно в методе store контроллера TaskController.
 ```php
@@ -66,7 +66,7 @@ public function store(Request $request)
 ```php
       <div>{{ $message }}</div>
 ```
-![Ку](images/2.png)
+![Ку](/2.png)
 
 6. Создаем собственный класс запроса для валидации формы задачи.
 - `php artisan make:request CreateTaskRequest`
@@ -127,7 +127,7 @@ public function store(Request $request)
     </div>
 @endif
 ```
-![Ку](images/3.png)
+![Ку](/3.png)
 
 11. Добавляем директиву @csrf в форму для защиты от атаки CSRF.
 ```php
@@ -145,7 +145,7 @@ public function store(Request $request)
 ```
 12. Добавляем возможность редактирования задачи. Создаем форму для редактирования задачи.
 
-![Ку](images/4.png)
+![Ку](/4.png)
 
 13. Создаем новый Request-класс UpdateTaskRequest с аналогичными правилами валидации.
 
